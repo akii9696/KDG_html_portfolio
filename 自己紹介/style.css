@@ -1,0 +1,273 @@
+body{
+    background-color:darkseagreen;
+    
+}
+main{
+    width: 86%;
+    margin: auto;
+}
+.fv{
+    padding: 80px;
+    margin-bottom:  160px;
+    position: relative;
+}
+.fv img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.fv h1{
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  z-index: 99999999;
+  transform: translateX(-50%);
+    margin-top: -50px;
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1;
+    font-weight: 900;
+}
+.favorite{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 120px;
+    text-align: center;
+}
+
+.section-title{
+    color:#fff;
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+.favorite h3{
+    color: #fff;
+    margin-top: 80px;
+    font-size: 40px;
+}
+.favorite h3 span{
+    font-size: 60px;
+    }
+
+    .card{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 60px;
+    }
+
+    .card img{
+        width: 48%;
+        max-width: 400px;
+        height: 500px;
+        border-radius: 24px;
+        object-fit: cover;
+    }
+
+    .card .text{
+        width: 48%;
+        text-align: left;
+        padding-right: 40px;
+    }
+
+.card .text h4{
+    color:darkcyan;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.card .sns{
+    margin-top: 24px;
+}
+.sns img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.gallary {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px 120px;
+    max-width: 1200px;
+}
+
+.gallary .section-title {
+    margin-bottom: 60px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.images:last-child{
+    align-items: start;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 10000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+  }
+  
+  #gnav_btn {
+    position: absolute;
+    width: 100px;
+    height: 52px;
+    top: 40px;
+    right: 50px;
+    z-index: 10000;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: 1px solid #333;
+    border-radius: 50px;
+  }
+  #gnav_btn span {
+    display: inline-block;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    position: absolute;
+    left: 30px;
+    height: 3px;
+    background-color: #333;
+    width: 40%;
+  }
+  #gnav_btn span:nth-of-type(1) {
+    top: 15px;
+  }
+  #gnav_btn span:nth-of-type(2) {
+    top: 23px;
+  }
+  #gnav_btn span:nth-of-type(3) {
+    top: 31px;
+  }
+  #gnav_btn:hover {
+    background-color: rgba(27, 45, 122, 0.7);
+    border-color: #fff;
+  }
+  #gnav_btn:hover span {
+    background: #fff;
+  }
+  #gnav_btn.open {
+    border: 1px solid #fff;
+  }
+  #gnav_btn.open span {
+    background: #fff;
+  }
+  #gnav_btn.open span:nth-of-type(1) {
+    top: 18px;
+    left: 32px;
+    -webkit-transform: translateY(6px) rotate(-45deg);
+            transform: translateY(6px) rotate(-45deg);
+    width: 35%;
+  }
+  #gnav_btn.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+  #gnav_btn.open span:nth-of-type(3) {
+    top: 30px;
+    left: 32px;
+    -webkit-transform: translateY(-6px) rotate(45deg);
+            transform: translateY(-6px) rotate(45deg);
+    width: 35%;
+  }
+  #gnav_btn.open:hover span {
+    background: #fff;
+  }
+  
+  nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow-y: scroll;
+    color: #fff;
+    height: 100%;
+  }
+  nav::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #555;
+    opacity: 0.9;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+    width: 82%;
+    max-width: 1000px;
+    margin: 160px auto 0;
+    line-height: 1.2;
+  }
+
+  .header-nav a{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .5s;
+  }
+
+  .header-nav a:active{
+    color: red;
+  }
+
+  /* .fade-up{
+    animation: fade-up .1s forwards;
+    opacity: 0;
+  }
+
+  @keyframes fade-up{
+    0%{
+      opacity: 0;
+      transform: tracklateY(200px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } */
+  .fadeIn {
+    opacity: 0;
+    transition-duration: 1000ms;
+    transition-property: opacity, transform;
+    transform: translate(0, 50px);
+  }
+  .fadeIn.scrollin {
+  opacity : 1;
+  transform : translate(0,0);
+}
+
+.fv h1::before{
+  content: "ガパオライス";
+  display: inline-block;
+}

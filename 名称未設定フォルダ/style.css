@@ -1,0 +1,27 @@
+h1{color:aqua
+font: size 40px;
+font-ewight:300;
+lettr-spacing: 400px;
+line-height: 1.5;
+text-aling: center;
+font-family select
+}
+
+img{
+    /* width: 800px */
+    /* height: 400px */
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 40px 40px 0 
+}
+
+.box{
+    display: inline-block；
+    margin: 40px 0px 200px;
+    padding: 40px;
+    background: blue;
+    border: 1px solid #000;
+
+
+
+}
